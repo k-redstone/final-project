@@ -1,0 +1,182 @@
+html {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+html::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
+}
+
+/* body {
+  height: 1440px;
+} */
+header {
+  border: 5px solid #000;
+  height: 200px;
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  padding-left: 20px;
+  width: auto;
+}
+header > h2 {
+  display: inline-block;
+  position: absolute;
+  top: 25px
+}
+header > p {
+  display: inline-block;
+  position: absolute;
+  top: 85px
+}
+.background img{
+  position: relative;
+  top: 15px;
+  filter: blur(5px);
+  width: 100vw;
+  height: 100%;
+  z-index: -1;
+}
+section {
+  position: relative;
+  width: 100%;
+  height: 75%;
+}
+section > h2 {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+}
+/* .slide-one {
+  width: 500px;
+  height: 600px;
+  position: absolute;
+  top: 10vh;
+  left: 100px;
+} */
+
+.sub-nav {
+  display: flex;
+  position: absolute;
+  top: 130px;
+  left: -30px;
+}
+.sub-nav li{
+  display: inline-block;
+  padding: 0 15px;
+}
+
+
+/* 아티스트 */
+
+.main-content {
+  height: 500px;
+  border: 1px solid #000;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+.main-contents article {
+  margin-top: 50px;
+}
+.main-content .content-img img{
+  width: 400px;
+  height: 400px;
+  margin: 50px;
+  left: -50px;
+  position: relative;
+  opacity: 0;
+}
+.main-content .content-img .active{
+  left: 50px;
+  opacity: 1;
+  transition: left 2s, opacity 2s;
+}
+.main-content .content-des p {
+  display: inline-block;
+  position: relative;
+  left: 100px;
+  width: 1100px;
+  margin-left: 75px;
+  margin-top: 50px;
+  font-weight: 700;
+  font-size: 25px;
+  opacity: 0;
+}
+.main-content .content-des .active {
+  opacity: 1;
+  left: 50px;
+  transition: left 2s, opacity 2s;
+}
+
+/* 전시관 */
+
+.main-ex {
+  height: 750px;
+  border: 1px solid #000;
+  margin: 0 auto;
+  position: relative;
+  top: 70px;
+}
+.wall {
+  height: 750px;
+}
+.wall .test{
+  position: absolute;
+  width: 1500px;
+  height: 700px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 150px;
+  z-index: -20;
+}
+.wall .black{
+
+}
+.wall .test p{
+  display: block;
+  width: 1000px;
+  font-size: 27px;
+  font-weight: 700;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-30%, -50%);
+  line-height: 4;
+  opacity: 0;
+}
+.oneToFour {
+  display: flex;
+  justify-content: space-around;
+}
+.fiveToEight {
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+}
+.img img {
+  width: 223px;
+  height: 280px;
+  margin: 30px;
+  flex-grow: 1;
+}
+.img.one:hover img {
+  position: absolute;
+  width: 400px;
+  height: 700px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 150px;
+  margin: 0;
+  z-index: 99;
+}
+.img.one:hover .test{
+  z-index: 20;
+  background-color: olive;
+}
+.img.one:hover .test p {
+  opacity: 1;
+}
+.img.one:hover .black{
+  position: absolute;
+  
+}
