@@ -1,0 +1,141 @@
+body {
+  background: url("../img/paper.png") no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#frame h1 {
+  font-size: 30px;
+  font-family: Consolas, monospace;
+  text-align: center;
+  padding: 30px 0;
+  border-bottom: 2px
+}
+#frame .board {
+  position: relative;
+  width: 900px;
+  margin: 10px auto;
+}
+
+/* 테이블 */
+#frame .board .review {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  border-top: 3px solid #000;
+  text-align: center;
+  line-height: 2;
+  border-collapse: collapse;
+  font-size: 15px;
+  font-weight: 700;
+  table-layout: fixed;
+}
+#frame .board .review .line1 {
+  border-bottom: 1px solid #000;
+}
+#frame .board .review td {
+  padding: 0 12px;
+  border-bottom: 1px solid #000;
+}
+#frame .board .review .review-id{
+  position: relative;
+  width: 50px;
+  box-sizing: border-box;
+}
+#frame .board .review .review-name{
+  position: relative;
+  width: 80px;
+}
+#frame .board .review .review-content{
+  position: relative;
+  width: 620px;
+}
+#frame .board .review .review-date{
+  position: relative;
+  width: 100px;
+}
+
+/* 글쓰기 */
+#frame .board .writeForm {
+  position: relative;
+  width: 100%;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 2;
+  border-collapse: collapse;
+  table-layout: auto;
+}
+#frame .board .writeForm td {
+  padding: 0 10px;
+}
+#frame .board .writeForm table {
+  position: relative;
+  width: 100%;
+  border-top: 2px solid #000;
+  border-bottom: 3px solid #000;
+  padding: 0 12px;
+}
+#frame .board .writeForm table th {
+  text-align: center;
+}
+#frame .board .writeForm input {
+  box-sizing: border-box;
+}
+#frame .board .writeForm .write-1 {
+  width: 40px;
+}
+#frame .board .writeForm .write-2 input{
+  width: 90px;
+  height: 30px;
+}
+#frame .board .writeForm .line-2 {
+  height: 60px;
+}
+#frame .board .writeForm .write-3 {
+  width: 50px;
+}
+#frame .board .writeForm .write-4 {
+  width: 710px;
+  position: relative;
+}
+#frame .board .writeForm .write-4 textarea {
+  width: 100%;
+  height: 55px;
+  position: relative;
+  resize: none;
+}
+#frame .board .writeForm .write-5 {
+  width: 10px;
+}
+#frame .board .writeForm .write-5 input{
+  border: 1px solid #000;
+  
+}
+
+
+/* 버튼 */
+.btnWrap {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 20px;
+  margin-top: 20px;
+}
+.btnWrap .pagePre {
+  position: absolute;
+  left: 0;
+  border: 1px solid #000;
+}
+.btnWrap .pageNext {
+  position: absolute;
+  left: 80px;
+  border: 1px solid #000;
+}
+.btnWrap .newWrite {
+  position: absolute;
+  right: 0;
+  border: 1px solid #000;
+}

@@ -6,9 +6,6 @@ html::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera*/
 }
 
-/* body {
-  height: 1440px;
-} */
 header {
   border: 5px solid #000;
   height: 200px;
