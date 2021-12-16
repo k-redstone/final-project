@@ -33,6 +33,9 @@ body {
   font-weight: 700;
   table-layout: fixed;
 }
+#frame .board .review .finish{
+  border-bottom: 3px solid #000;
+}
 #frame .board .review .line1 {
   border-bottom: 1px solid #000;
 }
@@ -51,11 +54,15 @@ body {
 }
 #frame .board .review .review-content{
   position: relative;
-  width: 620px;
+  width: 600px;
 }
 #frame .board .review .review-date{
   position: relative;
   width: 100px;
+}
+#frame .board .review .review-modify{
+  position: relative;
+  width: 62px;
 }
 
 /* 글쓰기 */
@@ -87,30 +94,40 @@ body {
 #frame .board .writeForm .write-1 {
   width: 40px;
 }
+#frame .board .writeForm .write-2 {
+  width: 90px;
+}
 #frame .board .writeForm .write-2 input{
+  width: 90px;
+  height: 30px;
+}
+#frame .board .writeForm .write-3 {
+  width: 90px;
+}
+#frame .board .writeForm .write-4 input{
   width: 90px;
   height: 30px;
 }
 #frame .board .writeForm .line-2 {
   height: 60px;
 }
-#frame .board .writeForm .write-3 {
+#frame .board .writeForm .write-5 {
   width: 50px;
 }
-#frame .board .writeForm .write-4 {
+#frame .board .writeForm .write-6 {
   width: 710px;
   position: relative;
 }
-#frame .board .writeForm .write-4 textarea {
+#frame .board .writeForm .write-6 textarea {
   width: 100%;
   height: 55px;
   position: relative;
   resize: none;
 }
-#frame .board .writeForm .write-5 {
+#frame .board .writeForm .write-7 {
   width: 10px;
 }
-#frame .board .writeForm .write-5 input{
+#frame .board .writeForm .write-7 input{
   border: 1px solid #000;
   
 }

@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="../css/review.css">
+  <script defer src="../js/popup.js"></script>
 </head>
 <body>
   <section id="frame">
@@ -17,18 +18,21 @@
           <th class="review-name">작성자</th>
           <th class="review-content">내용</th>
           <th class="review-date">작성일</th>
+          <th class="review-modify">수정</th>
         </tr>
         <tr>
-          <td class="review-id">asef</td>
+          <td class="review-id 5">asef</td>
           <td>aef</td>
           <td>안녕하세요 저는 누구누구입니다. 이작품은 어떠한 식으로 제작하여 무엇이 좋은거 같네요. 하지만 이러이러한 부분에서는 보완이 필요해 보입니다. 또한 이부분은 아럼ㄴ이ㅏ럼니ㅏㄹ엄니ㅏ;ㅜ하ㅑㅇasdfkjekonfslkdnasgsegasgds</td>
           <td>aasef</td>
+          <td colspan="2"><input type="button" onclick="openpopup(this.parentNode)" value="수정"><input type="button" onclick="openpopup2()" value="삭제"></td>
         </tr>
         <tr>
           <td class="review-id">asef</td>
           <td>누구누구</td>
           <td>asef</td>
           <td>aasef</td>
+          <td colspan="2"><input type="submit" value="수정"><input type="submit" value="삭제"></td>
         </tr>
       </table>
       <form action="write.jsp" class="writeForm" method="post">
@@ -36,14 +40,14 @@
           <tr class="line-1">
             <th class="write-1">이름</th>
             <td class="write-2"><input type="text" name="name"></td>
+            <th class="write-3">비밀번호</th>
+            <td class="write-4"><input type="password" name="password"></td>
           </tr>
           <tr class="line-2">
-            <th class="write-3">내용</th>
-            <td class="write-4"><textarea type="text" name="content"></textarea></td>
-            <td class="write-5"><input type="submit" value="글쓰기"></td>
+            <th class="write-5">내용</th>
+            <td class="write-6" colspan="3"><textarea type="text" name="content"></textarea></td>
+            <td class="write-7"><input type="submit" value="글쓰기"></td>
           </tr>
-            
-          
         </table>
       </form>
       <div class="btnWrap">

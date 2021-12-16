@@ -63,99 +63,100 @@ p{
   font-size: 15px;
   font-family: Consolas, monospace;
   color: black;
-}
-
-#slide .cnt > li span img {
+  }
+  
+  #slide .cnt > li span img {
   width: 40%;
   transition: width 0.3s ease-out;
   cursor: pointer;
-}
+  }
 
-#slide .cnt > li span img:hover {
+  #slide .cnt > li span img:hover {
   width: 70%;
-}
+  }
 
-/*작품 슬라이드쇼 버튼 [<>]*/
-.btn {
-display: flex;
-justify-content: center;
-}
+  /*작품 슬라이드쇼 버튼 [<>]*/
+  .btn {
+  display: flex;
+  justify-content: center;
+  }
 
-/*작품 슬라이드쇼 버튼 [<>]*/
-.btn > button {
+  /*작품 슬라이드쇼 버튼 [<>]*/
+  .btn > button {
   position: relative;
   width: 40px;
   height: 40px;
   border: 1px;
   margin: 50px;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
   border-radius: 50%;
   font-size: 30px;
   cursor: pointer;
   background-color: black;
   color: white;
-}
+  }
 
-/*전체 리스트 보기 버튼 [ALL]*/
-.btn_list {
+  /*전체 리스트 보기 버튼 [ALL]*/
+  .btn_list {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 30px;
-}
-
-/*전체 리스트 보기 버튼 [ALL]*/
-.btn_list a {
-  border:1px;
+  }
+  
+  /*전체 리스트 보기 버튼 [ALL]*/
+  .btn_list a {
+  border: 1px;
   cursor: pointer;
   color: black;
   font-family: Consolas, monospace;
   font-size: 15px;
   padding: 6px 15px;
   text-decoration: none;
-}
+  }
 
-/*전체 리스트 보기 hover [ALL]*/
-.btn_list a:hover {
+  /*전체 리스트 보기 hover [ALL]*/
+  .btn_list a:hover {
   color: white;   
   background-color: black;
-}
-
-/*전체 리스트 보기 active [ALL]*/
-.btn_list a:active {
+  }
+  
+  /*전체 리스트 보기 active [ALL]*/
+  .btn_list a:active {
   position: relative;
   top: 1px;
-}
+  }
 
-.list {
+  .list {
   display: none;
   border: 1px;
   padding: 30px;
   margin: 30px 0;
-}
+  }
 
-.list.active {
+  .list.active {
   display: block;
-}
+  }
 
-.list ul {
+  .list ul {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-}
-
-/*리스트에 보이는 이미지*/
-.list ul {
+  }
+  
+  /*리스트에 보이는 이미지*/
+  .list ul {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-}
+  }
 
-.list ul li {
+  .list ul li {
   width: 300px;
-  margin-bottom: 200px;
-}
+/*      margin-bottom: 200px;*/ /*리스트 이미지 바닥 여분 삭제*/
+  }
 
-.list ul li img {
+  .list ul li img {
   width: 100%;
-}
+  }
+  
